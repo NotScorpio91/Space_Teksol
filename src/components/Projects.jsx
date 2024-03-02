@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import Teksol from '../assets/teksol.png'
-import Space_Teksol from '../assets/Space_Teksol.png'
-import SpaceWebsite from '../assets/SpaceWebsite.png'
+import Teksol from "../assets/teksol.png";
+import Space_Teksol from "../assets/Space_Teksol.png";
+import Nextjs from "../assets/nextjs.png";
 
 const Projects = () => {
   return (
@@ -16,18 +16,21 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
           src={Teksol}
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          link='https://theteksol.com/'
+          main='main'
+          title="The Teksol"
+          description="TEKSOL: Your trusted IT solutions partner. Experts in Laravel, Django, React, Vue.js. 100+ global projects. Client-focused for top-notch results. Experience innovation with TEKSOL."
         />
         <ProjectCard
           src={Space_Teksol}
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          link='/#about-me'
+          title="Space Themed Website"
+          description="Experience the wonders of the cosmos with this captivating space-themed website. Dive into celestial realms and explore interactive features that bring the universe to life."
         />
         <ProjectCard
-          src={SpaceWebsite}
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src={Nextjs}
+          title="Nextjs Web Clone"
+          description="Discover our sleek Next.js web clone a modern, responsive, and customizable solution. Elevate your online presence with cutting-edge technology and stunning design. "
         />
       </div>
     </div>
