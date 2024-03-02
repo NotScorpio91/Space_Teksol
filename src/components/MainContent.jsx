@@ -22,7 +22,7 @@ const MainContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Frontend Developer Portfolio
           </h1>
         </motion.div>
 
@@ -44,8 +44,10 @@ const MainContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          As a seasoned Frontend Developer, I excel in crafting captivating
+          websites and applications with seamless user experiences. Let my
+          portfolio showcase my mastery in frontend technologies and design
+          finesse. Explore and be inspired!
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
@@ -59,12 +61,7 @@ const MainContent = () => {
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
       >
-        <img
-          src={Image}
-          alt="work icons"
-          height={650}
-          width={650}
-        />
+        <img src={Image} alt="work icons" height={650} width={650} />
       </motion.div>
     </motion.div>
   );

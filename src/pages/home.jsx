@@ -3,6 +3,8 @@ import Main from '../components/Main'
 import Navbar from '../components/Navbar'
 import Skills from '../components/Skills'
 import StarBackground from '../components/StarBackground'
+import Encryption from '../components/Encryption'
+import Projects from '../components/Projects'
 
 function home() {
   return (
@@ -13,6 +15,8 @@ function home() {
         <div className="flex flex-col">
             <Main />
             <Skills />
+            <Encryption />
+            <Projects />
         </div>
     </div>
     </>

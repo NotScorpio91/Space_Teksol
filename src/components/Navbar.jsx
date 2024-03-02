@@ -1,25 +1,18 @@
-import { Socials } from "./index";
 import React from "react";
-
+import { FaFacebook } from "react-icons/fa6";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import Logo from "../assets/logo.png";
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
-        >
-          {/* <Image
-            src="/NavLogo.png"
+      <div className="w-full h-full flex flex-row items-center justify-around ">
+        <a href="/" className="h-auto w-auto flex flex-row items-center">
+          <img
+            src={Logo}
             alt="logo"
-            width={70}
-            height={70}
-            className="cursor-pointer hover:animate-slowspin"
-          /> */}
-
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            Scorpio
-          </span>
+            className="cursor-pointer hover:animate-slowspin w-28"
+          />
         </a>
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
@@ -37,15 +30,15 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <img
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
-          ))}
+          <a href="https://www.facebook.com/theteksol/" target="main">
+            <FaFacebook size={25} className="text-purple-400" />
+          </a>
+          <a href="https://www.linkedin.com/company/theteksol/" target="main">
+            <IoLogoLinkedin size={26} className="text-purple-400 rounded-xl" />
+          </a>
+          <a href="https://github.com/TekSol" target="main">
+            <FaGithub size={25} className="text-purple-400" />
+          </a>
         </div>
       </div>
     </div>
